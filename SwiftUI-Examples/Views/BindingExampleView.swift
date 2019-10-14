@@ -11,10 +11,10 @@ import SwiftUI
 struct BindingExampleView: View {
     let products: [Product] = [
         Product(id:1, title: "ASD", isFavorited: false),
-         Product(id:2,title: "QWR", isFavorited: true),
-           Product(id:3,title: "VVV", isFavorited: false),
-             Product(id:4,title: "FAD", isFavorited: true),
-               Product(id:5,title: "GGG", isFavorited: false)
+        Product(id:2,title: "QWR", isFavorited: true),
+        Product(id:3,title: "VVV", isFavorited: false),
+        Product(id:4,title: "FAD", isFavorited: true),
+        Product(id:5,title: "GGG", isFavorited: false)
     ]
 
        @State private var showFavorited: Bool = false
@@ -44,12 +44,7 @@ struct FilterView: View {
 }
 
  
-struct Product : Identifiable {
-    var id: Int
-    
-    var title : String
-    var isFavorited : Bool
-}
+
 struct BindingExampleView_Previews: PreviewProvider {
     static var previews: some View {
         BindingExampleView()

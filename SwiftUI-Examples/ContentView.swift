@@ -27,8 +27,8 @@ struct ContentView: View {
                     NavigationLink(destination: BindingExampleView()) {
                                     Text("Binding Example")
                                 }
-                    NavigationLink(destination: StateExampleView()) {
-                                    Text("Show Detail View")
+                    NavigationLink(destination: SimpleListView()) {
+                                    Text("Simple List View")
                                 }
                     NavigationLink(destination: StateExampleView()) {
                                     Text("Show Detail View")
