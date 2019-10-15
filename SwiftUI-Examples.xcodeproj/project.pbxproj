@@ -22,6 +22,7 @@
 		1F96F67E235502CC003CA209 /* SimpleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96F67D235502CC003CA209 /* SimpleListView.swift */; };
 		1F96F68023550387003CA209 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96F67F23550387003CA209 /* Models.swift */; };
 		1F96F68223550DE6003CA209 /* SimpleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96F68123550DE6003CA209 /* SimpleListViewModel.swift */; };
+		1F9A9D4223561987003572EE /* ContainerExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9A9D4123561987003572EE /* ContainerExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		1F96F67D235502CC003CA209 /* SimpleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListView.swift; sourceTree = "<group>"; };
 		1F96F67F23550387003CA209 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		1F96F68123550DE6003CA209 /* SimpleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListViewModel.swift; sourceTree = "<group>"; };
+		1F9A9D4123561987003572EE /* ContainerExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerExampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				1F96F6772353E71A003CA209 /* EnvironmentObjectExampleView.swift */,
 				1F96F6792353EB77003CA209 /* BindingExampleView.swift */,
 				1F96F67D235502CC003CA209 /* SimpleListView.swift */,
+				1F9A9D4123561987003572EE /* ContainerExampleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				1F96F6722353D8A0003CA209 /* StateExampleView.swift in Sources */,
 				1F96F6442353D82F003CA209 /* SceneDelegate.swift in Sources */,
 				1F96F6762353E6D8003CA209 /* UserSettings.swift in Sources */,
+				1F9A9D4223561987003572EE /* ContainerExampleView.swift in Sources */,
 				1F96F68023550387003CA209 /* Models.swift in Sources */,
 				1F96F6782353E71A003CA209 /* EnvironmentObjectExampleView.swift in Sources */,
 				1F96F6462353D82F003CA209 /* ContentView.swift in Sources */,

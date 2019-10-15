@@ -30,12 +30,9 @@ struct ContentView: View {
                     NavigationLink(destination: SimpleListView()) {
                                     Text("Simple List View")
                                 }
-                    NavigationLink(destination: StateExampleView()) {
-                                    Text("Show Detail View")
-                                }
-                    NavigationLink(destination: StateExampleView()) {
-                                    Text("Show Detail View")
-                                }
+                    NavigationLink(destination: ContainerExampleView()) {
+                                                    Text("Container Example View")
+                                                }
             
                 }.navigationBarTitle(Text("Examples"))
             
