@@ -15,21 +15,35 @@ class SimpleListViewModel: ObservableObject {
  
     @Published  var repositories = [Repository]()
     
-    var query : String = "" {
+//   @Published  var query : String = "" {
+     var query : String = "" {
         didSet {
             self.search()
+             print(query)
         }
     }
     
    func search() {
-    self.subscriber = self.request(query: query)
-             .catch { _ in Just([]) }
-             .assign(to: \.repositories, on: self)
-     }
+      self.subscriber = self.request(query: query)
+               .catch { _ in Just([]) }
+               .assign(to: \.repositories, on: self)
+    }
 
+//    func debounceSearch() {
+//
+//        _ = AnyCancellable( $query
+//           .removeDuplicates()
+//           .debounce(for: 1, scheduler: DispatchQueue.main)
+//           .sink(receiveValue: { query in
+//               self.subscriber = self.request(query: query)
+//                   .catch { _ in Just([]) }
+//                   .assign(to: \.repositories, on: self)
+//           }))
+//
+//    }
     
    func request(query: String) -> AnyPublisher<[Repository], Error> {
-        guard let url = url(query)
+    guard let url = url(query)
             else { preconditionFailure("Can't create url for query: \(query)") }
         let decoder = JSONDecoder()
         return URLSession.shared.dataTaskPublisher(for: url)
